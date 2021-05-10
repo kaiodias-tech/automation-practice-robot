@@ -15,4 +15,4 @@ Conferir se o cadastro foi efetuado com sucesso
     Wait Until Element Is Visible    ${RM_CTCOLLUM}         ${TIMEOUT}
     Element Text Should Be           ${RM_CTCOLLUM}
     ...    ${RM_TXTINFO}
-    Element Text Should Be           ${RM_ELEM-USER}        ${RM_USER}
+    Element Text Should Not Be       ${RM_ELEM-USER}        ${RM_USER}
