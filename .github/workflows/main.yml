@@ -27,5 +27,5 @@ jobs:
         uses: joonvena/robotframework-docker-action@v0.1
         env:
           BROWSER: chrome
-          ROBOT_TESTS_DIR: C:/KAIO - ARQUIVOS/automation-practice
-          ROBOT_REPORTS_DIR: C:/KAIO - ARQUIVOS/automation-practice/logs
+          ROBOT_TESTS_DIR: ${{ github.workspace }}/automation-practice
+          ROBOT_REPORTS_DIR: ${{ github.workspace }}/logs
